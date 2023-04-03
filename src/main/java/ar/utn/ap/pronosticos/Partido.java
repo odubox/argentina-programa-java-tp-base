@@ -46,6 +46,8 @@ public class Partido {
 		this.golesEq2 = golesEq2;
 	}
 	
+	
+	
 	public EnumResultado resultado(Equipo equipo) {
 		if(golesEq1 == golesEq2) {
 			return EnumResultado.EMPATE;

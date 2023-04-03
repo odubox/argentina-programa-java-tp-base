@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.List;
 
 public class MainTP {
-
+ 
 	public static void main(String[] args) {
 
 		// Leer resultados
@@ -35,13 +35,14 @@ public class MainTP {
 				Equipo equipo2 = new Equipo(campos[3]);
 				Partido partido = new Partido(equipo1, equipo2);
 				partido.setGolesEq1(Integer.parseInt(campos[1]));
+
 				partido.setGolesEq2(Integer.parseInt(campos[2]));
 				partidos.add(partido);
 			}
 
 		}
 		// Leer pronostico
-		int puntos = 0; // total puntos pesona
+		int puntos = 0; // total puntos persona
 		
 		Path pathPronostico = Paths.get(args[1]);
 		List<String> lineasPronostico = null;
